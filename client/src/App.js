@@ -16,22 +16,20 @@ componentDidMount(){
   // fetching data from api
   axios.get('http://localhost:5000/api/players')
   .then(res =>{
-    console.log(res)
+    // setting state data with api data
+    this.setState({
+      data:res.data,
+    })
+    console.log(this.state.data)
   })
   .catch(err => console.log(err, 'api data not found'))
 }
 
 
-
-
-
-
-
-
 render(){
   return (
     <div className='App'>
-
+      
     </div>
   );
 };

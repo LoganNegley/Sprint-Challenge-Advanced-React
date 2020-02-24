@@ -5,7 +5,7 @@ function PlayerCard(props){
 
     return (
         <div className='players-container' data-testid='players-container'>
-            <h2>Players of World Cup</h2>
+            <h1>Players of World Cup</h1>
             {props.playerData.map(player =>(
                 <div className='playerCard' >
                     <h3 data-testid='playerNames'>{player.name} </h3>

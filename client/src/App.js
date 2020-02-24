@@ -4,6 +4,28 @@ import './App.css';
 
 
 class App extends React.Component{
+  constructor(){
+    super();
+    // initial state
+    this.state ={
+      data: [],
+    }
+  }
+
+componentDidMount(){
+  // fetching data from api
+  axios.get('http://localhost:5000/api/players')
+  .then(res =>{
+    console.log(res)
+  })
+  .catch(err => console.log(err, 'api data not found'))
+}
+
+
+
+
+
+
 
 
 render(){

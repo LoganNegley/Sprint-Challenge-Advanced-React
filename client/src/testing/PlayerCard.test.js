@@ -2,11 +2,13 @@ import React from "react";
 import { render } from "@testing-library/react";
 import PlayerCard from "../components/PlayerCards";
 
-test('player cards are showing', ()=>{
+test('subTitle title showing', ()=>{
     // Arrange
-    const {getByTestId} = render(<App/>);
+    const {getByText} = render(<PlayerCard/>);
     // Act
-    const cards = getByTestId(/cards/i);
+    const subTitle = getByText(/players of the world cup/i);
 // Assert
-    expect(cards).toBeInTheDocument();
+    expect(subTitle).toBeInTheDocument();
 }) ;
+
+// 

@@ -31,6 +31,9 @@ componentDidMount(){
 render(){
   return (
     <div className='App'>
+      <header data-testid='title'>
+        Womans World Cup 
+      </header>
       <PlayerCard playerData={this.state.data}/>
     </div>
   );

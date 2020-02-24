@@ -3,7 +3,6 @@ import React from 'react';
 
 function PlayerCard(props){
 
-
     return (
         <div className='players-container'>
             {props.playerData.map(player =>(

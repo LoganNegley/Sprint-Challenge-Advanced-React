@@ -29,7 +29,7 @@ componentDidMount(){
 render(){
   return (
     <div className='App'>
-      
+      <PlayerCard playerData={this.state.data}/>
     </div>
   );
 };

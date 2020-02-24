@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
+import Navbar from '../src/components/Navbar';
 
 import PlayerCard from '../src/components/PlayerCards';
 
@@ -31,9 +32,7 @@ componentDidMount(){
 render(){
   return (
     <div className='App'>
-      <header data-testid='title'>
-        Womans World Cup 
-      </header>
+      <Navbar/>
       <PlayerCard playerData={this.state.data}/>
     </div>
   );

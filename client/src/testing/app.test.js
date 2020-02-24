@@ -7,13 +7,13 @@ test("renders App without crashing", () => {
 });
 
 
-test('main header showing', ()=>{
+// test('main header showing', ()=>{
 
-//Arrange
-const {getByText} = render(<App/>);
-// Act
-const title = getByText(/Womans World Cup/i)
-//Assert
-expect(title).toBeInTheDocument()
+// //Arrange
+// const {getByText} = render(<App/>);
+// // Act
+// const title = getByText(/Womans World Cup/i)
+// //Assert
+// expect(title).toBeInTheDocument()
 
-});
+// });

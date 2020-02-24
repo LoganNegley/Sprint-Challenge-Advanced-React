@@ -2,11 +2,11 @@ import React from "react";
 import { render } from "@testing-library/react";
 import PlayerCard from "../components/PlayerCards";
 
-test('submit button showing', ()=>{
+test('player cards are showing', ()=>{
     // Arrange
-    const {getByTestId} = render(<PlayerCard/>);
+    const {getByTestId} = render(<App/>);
     // Act
-    const cards = getByTestId(//i);
+    const cards = getByTestId(/cards/i);
 // Assert
-    expect(button).toBeInTheDocument();
+    expect(cards).toBeInTheDocument();
 }) ;

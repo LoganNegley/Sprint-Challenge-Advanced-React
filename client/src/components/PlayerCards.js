@@ -1,12 +1,14 @@
 import react from 'react';
 
 
-function Players(){
+function PlayerCard(props){
 
 
     return (
-
+        <div className='players-container'>
+            {}
+        </div>
     )
 }
 
-export default Players;
+export default PlayerCard;

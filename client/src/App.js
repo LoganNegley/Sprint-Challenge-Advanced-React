@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 
+import PlayerCard from '../src/components/PlayerCards';
+
 
 class App extends React.Component{
   constructor(){

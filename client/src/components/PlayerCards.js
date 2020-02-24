@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 
 
 function PlayerCard(props){
@@ -6,7 +6,13 @@ function PlayerCard(props){
 
     return (
         <div className='players-container'>
-            {}
+            {props.playerData.map(player =>(
+                <div className='playerCard'>
+                    <h1>{player.name} </h1>
+                    <h4>{player.country}</h4>
+                    <h4># of Searches: {player.searches}</h4>
+                </div>
+            ))}
         </div>
     )
 }
